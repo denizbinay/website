@@ -22,9 +22,14 @@ export default defineThemeConfig({
   ],
   footerItems: [
     {
-      icon: 'tabler--brand-github',
-      href: 'https://github.com/FjellOverflow/nordlys',
-      label: 'Github'
+      icon: 'tabler--brand-bluesky',
+      href: 'https://bsky.app/profile/denizbinay.bsky.social',
+      label: 'Bluesky'
+    },
+    {
+      icon: 'tabler--mail',
+      href: 'mailto:tellme@denizbinay',
+      label: 'Email'
     },
     {
       icon: 'tabler--rss',

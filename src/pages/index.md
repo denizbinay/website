@@ -1,11 +1,10 @@
 ---
 layout: '@/layouts/LandingLayout.astro'
-title: Nordlys
+title: Hej Ya'll
 background: true
 logo: true
 ---
 
-A minimal Astro blog theme.\
-Ideal for a personal [blog](/posts/) and showcasing a [projects](/projects/) portfolio.\
-Fully customizable, dark mode & built-in color schemes.\
-Read more in the [about](/about/) section.
+I'm Deniz Binay.\
+If you're looking for my professional work, head over to [bombig.net](https://bombig.net).\
+This is my personal website. Writing this [blog](/posts/) in public is part of my roadmap to becoming a better problem solver. Learn more about that [here](/about/).
