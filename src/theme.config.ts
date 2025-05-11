@@ -1,24 +1,13 @@
 import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
-  site: 'https://nordlys.fjelloverflow.dev',
-  title: 'Nordlys',
-  description: 'A minimal Astro blog theme',
-  author: 'FjellOverflow',
+  site: 'https://denizbinay.de',
+  title: 'deniz binay',
+  description: 'my blog',
+  author: 'Deniz Binay',
   navbarItems: [
     { label: 'Blog', href: '/posts/' },
-    { label: 'Projects', href: '/projects/' },
-    { label: 'Tags', href: '/tags/' },
-    { label: 'About', href: '/about/' },
-    {
-      label: 'Other pages',
-      children: [
-        { label: 'Landing page', href: '/' },
-        { label: '404 page', href: '/404' },
-        { label: 'Author: FjellOverflow', href: '/authors/FjellOverflow/' },
-        { label: 'Tag: documentation', href: '/tags/documentation/' }
-      ]
-    }
+    { label: 'About', href: '/about/' }
   ],
   footerItems: [
     {
@@ -45,7 +34,6 @@ export default defineThemeConfig({
   colorScheme: 'scheme-mono',
   openGraphImage: undefined,
   postsPerPage: 4,
-  projectsPerPage: 3,
   scrollProgress: false,
   scrollToTop: true,
   tagIcons: {

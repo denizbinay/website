@@ -14,7 +14,6 @@ export type Props = BaseLayoutProps & {
     scrollProgress: boolean
     activeHeaderLink: string
     scrollToTop: boolean
-    searchable: boolean
   }>
 }
 
@@ -23,8 +22,7 @@ const { frontmatter } = Astro.props
 const {
   scrollProgress = config.scrollProgress,
   scrollToTop = config.scrollToTop,
-  activeHeaderLink,
-  searchable = false
+  activeHeaderLink
 } = frontmatter
 ---
 
@@ -41,11 +39,7 @@ const {
       <slot name="aside" />
     </aside>
 
-    <main
-      id="main"
-      class="mt-6 sm:mt-12"
-      data-pagefind-body={searchable ? true : undefined}
-    >
+    <main id="main" class="mt-6 sm:mt-12">
       <Prose class="mb-6 sm:mb-12">
         <slot />
       </Prose>

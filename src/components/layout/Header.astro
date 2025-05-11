@@ -1,5 +1,5 @@
 ---
-import logo from '@/assets/logo.svg'
+import portrait from '@/assets/deniz-binay-portrait.jpg'
 import Dropdown from '@/components/Dropdown.astro'
 import HeaderItem from '@/components/layout/HeaderItem.astro'
 import MobileNavToggle from '@/components/layout/MobileNavToggle.astro'
@@ -27,12 +27,15 @@ export const isNavItem = (item: HeaderItemType): item is NavItemType =>
     >Skip to main content</a
   >
   <div class="flex justify-between py-4 sm:py-8">
-    <a href="/" class="text-accent flex gap-2 text-2xl font-semibold">
+    <a
+      href="/"
+      class="text-accent flex items-center justify-center gap-4 text-xl font-semibold"
+    >
       <Image
-        alt="Nordlys logo, a drawing of two gray mountains with green northern lights in the background"
-        src={logo}
-        height={24}
         loading="eager"
+        alt="Portrait of Deniz Binay"
+        src={portrait}
+        class="h-[24px] w-[24px] rounded-full object-cover sm:h-8 sm:w-8"
       />
       {config.title}
     </a>
@@ -56,20 +59,12 @@ export const isNavItem = (item: HeaderItemType): item is NavItemType =>
           ))
         }
         <li class="text-2xl">
-          <a href="/search/" class="flex items-center" aria-label="Search">
-            <span class="clickable iconify tabler--search"></span>
-          </a>
-        </li>
-        <li class="text-2xl">
           {config.modeToggle && <ModeToggle />}
         </li>
       </ul>
     </nav>
     <div class="flex items-center justify-center gap-4 text-2xl sm:hidden">
       {config.modeToggle && <ModeToggle />}
-      <a href="/search/" aria-label="Search">
-        <span class="clickable iconify tabler--search text-xl"></span>
-      </a>
       <MobileNavToggle />
     </div>
   </div>
